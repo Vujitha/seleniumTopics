@@ -51,6 +51,7 @@ public class Assignment {
 				
 				boolean titleDisplayed = driver.findElement(By.tagName("h2")).isDisplayed();
 				System.out.println("The Title is displayed: " +titleDisplayed);
+				//New code
 	}
 
 }
