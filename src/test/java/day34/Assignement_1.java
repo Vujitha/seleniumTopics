@@ -27,8 +27,6 @@ public class Assignement_1 {
 			 Thread.sleep(3000);
 		 }
 		 //Reading data from the page
-		//table[@id="productTable"]//tr[1]//td[2]
-
 		 int noOfRows = driver.findElements(By.xpath("//table[@id=\"productTable\"]//tr")).size();
 		 System.out.println("Total No of Rows:" +noOfRows);
 		 for(int r=1; r<=noOfRows; r++)
