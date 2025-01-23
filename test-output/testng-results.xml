@@ -1,47 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-20T23:40:36 IST" name="Suite" finished-at="2025-01-20T23:40:36 IST" duration-ms="60">
+  <suite started-at="2025-01-23T23:22:35 IST" name="Suite" finished-at="2025-01-23T23:22:44 IST" duration-ms="9028">
     <groups>
     </groups>
-    <test started-at="2025-01-20T23:40:36 IST" name="Test" finished-at="2025-01-20T23:40:36 IST" duration-ms="60">
-      <class name="day43.c1">
-        <test-method is-config="true" signature="bm()[pri:0, instance:day43.c1@32b260fa]" started-at="2025-01-20T23:40:36 IST" name="bm" finished-at="2025-01-20T23:40:36 IST" duration-ms="1" status="PASS">
+    <test started-at="2025-01-23T23:22:35 IST" name="Test" finished-at="2025-01-23T23:22:44 IST" duration-ms="9028">
+      <class name="day46.OrangeHRM">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:day46.OrangeHRM@505fc5a4]" started-at="2025-01-23T23:22:35 IST" name="setUp" finished-at="2025-01-23T23:22:44 IST" duration-ms="8394" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="A2()[pri:2, instance:day43.c1@32b260fa]" started-at="2025-01-20T23:40:36 IST" name="A2" finished-at="2025-01-20T23:40:36 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogo()[pri:1, instance:day46.OrangeHRM@505fc5a4]" started-at="2025-01-23T23:22:44 IST" name="testLogo" finished-at="2025-01-23T23:22:44 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A2 -->
-        <test-method signature="A3()[pri:3, instance:day43.c1@32b260fa]" started-at="2025-01-20T23:40:36 IST" name="A3" finished-at="2025-01-20T23:40:36 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testLogo -->
+        <test-method signature="testTitle()[pri:2, instance:day46.OrangeHRM@505fc5a4]" started-at="2025-01-23T23:22:44 IST" name="testTitle" finished-at="2025-01-23T23:22:44 IST" duration-ms="14" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [OrangeHRMS] but found [OrangeHRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [OrangeHRMS] but found [OrangeHRM]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at day46.OrangeHRM.testTitle(OrangeHRM.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A3 -->
-        <test-method is-config="true" signature="am()[pri:0, instance:day43.c1@32b260fa]" started-at="2025-01-20T23:40:36 IST" name="am" finished-at="2025-01-20T23:40:36 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testTitle -->
+        <test-method signature="testURL()[pri:3, instance:day46.OrangeHRM@505fc5a4]" started-at="2025-01-23T23:22:44 IST" name="testURL" finished-at="2025-01-23T23:22:44 IST" depends-on-methods="day46.OrangeHRM.testTitle" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method OrangeHRM.testURL()[pri:3, instance:day46.OrangeHRM@505fc5a4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method OrangeHRM.testURL()[pri:3, instance:day46.OrangeHRM@505fc5a4] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- am -->
-      </class> <!-- day43.c1 -->
-      <class name="day43.c2">
-        <test-method is-config="true" signature="bs()[pri:0, instance:day43.c2@3bf9ce3e]" started-at="2025-01-20T23:40:36 IST" name="bs" finished-at="2025-01-20T23:40:36 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- testURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day46.OrangeHRM@505fc5a4]" started-at="2025-01-23T23:22:44 IST" name="tearDown" finished-at="2025-01-23T23:22:44 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bs -->
-        <test-method signature="AC3()[pri:1, instance:day43.c2@3bf9ce3e]" started-at="2025-01-20T23:40:36 IST" name="AC3" finished-at="2025-01-20T23:40:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC3 -->
-        <test-method signature="AC2()[pri:4, instance:day43.c2@3bf9ce3e]" started-at="2025-01-20T23:40:36 IST" name="AC2" finished-at="2025-01-20T23:40:36 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC2 -->
-        <test-method is-config="true" signature="as()[pri:0, instance:day43.c2@3bf9ce3e]" started-at="2025-01-20T23:40:36 IST" name="as" finished-at="2025-01-20T23:40:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- as -->
-      </class> <!-- day43.c2 -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- day46.OrangeHRM -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
